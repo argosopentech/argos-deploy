@@ -6,9 +6,7 @@ ARGOS_GIT_DIR="$HOME/git"
 for gitrepository in $(cat git-repositories)
 do
 	cd $ARGOS_GIT_DIR
-	if [ ! -d $gitrepository ] ; then
-		git clone $gitrepository 2>/dev/null
-	fi
+	git clone $gitrepository 2>/dev/null
 done
 
 # Run Argos Deploy
