@@ -3,7 +3,7 @@
 ARGOS_GIT_DIR="$HOME/git"
 
 # Install git repositories
-for gitrepository in $(cat "git-repositories")
+for gitrepository in $(cat git-repositories)
 do
 	cd $ARGOS_GIT_DIR
 	if [ ! -d $gitrepository ] ; then
