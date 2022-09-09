@@ -14,6 +14,6 @@ ARGOS_DEPLOY_DIR="$ARGOS_GIT_DIR/argos-deploy"
 cd $ARGOS_DEPLOY_DIR
 for s in $(ls s)
 do
-	. "s/$s/init.sh"
+	. "s/$s/init"
 done
 
